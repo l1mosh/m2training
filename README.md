@@ -1,2 +1,2 @@
 # m2training
-magento 2 training project
+Magento 2 training project

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="medialounge" translate="label" sortOrder="110">
+            <label>Media Lounge</label>
+        </tab>
+        <section id="ml_sales_restriction" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Sales Restriction</label>
+            <tab>medialounge</tab>
+            <resource>ML_DeveloperTest::product_by_country</resource>
+            <group id="general" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General Settings</label>
+                <field id="enable" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>If Enabled, products will be restricted to add depenting on product's configuration.</comment>
+                </field>
+                <field id="message" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Message</label>
+                    <comment>This message will show when products can't be added to basket.</comment>
+                </field>
+                <field id="api_link" translate="label" type="text" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>GeoIP api link</label>
+                    <comment>GeoIP api link like (http://api.ipapi.com/api/) only http available with free account</comment>
+                </field>
+                <field id="access_key" translate="label" type="text" sortOrder="4" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Access Key</label>
+                    <comment>Access key from http://api.ipapi.com/ only http available with free account.</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

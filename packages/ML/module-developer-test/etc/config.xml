@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <ml_sales_restriction>
+            <general>
+                <enable>1</enable>
+                <message>I'm sorry, this product cannot be ordered from</message>
+                <api_link>http://api.ipapi.com/api/</api_link>
+                <access_key>666f29a53c5ade2c875ca06aa3664294</access_key>
+            </general>
+        </ml_sales_restriction>
+    </default>
+</config>
